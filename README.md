@@ -157,7 +157,7 @@ The answer is more complicated than the popular arguments suggest.
 
 Knowledge distillation is not an exotic loophole. It is a standard technique, known since Hinton's 2015 paper: a smaller "student" model learns from the outputs or behavior of a larger "teacher," and variants of the idea run through modern AI development.
 
-and despite this is true wrong . the existence of distillation techniques is not, by itself, evidence that a model was simply copied. Building a competitive foundation model still requires enormous quantities of diverse data, optimization, compute, and engineering—and public evidence is rarely sufficient to establish exactly how any particular model was trained.
+and Whether this is true or false . the existence of distillation techniques is not, by itself, evidence that a model was simply copied. Building a competitive foundation model still requires enormous quantities of diverse data, optimization, compute, and engineering—and public evidence is rarely sufficient to establish exactly how any particular model was trained.
 
 But the deeper question is more interesting:
 
