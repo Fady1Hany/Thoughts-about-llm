@@ -1,7 +1,7 @@
 > **A Note :**
 I used AI to help with the English phrasing and translation of this work because English is not my first language. The ideas themselves are entirely my own personal thoughts and hypotheses. I used AI primarily to express those ideas more clearly and naturally in English, so that they could be accessible to a wider audience. I also used AI to help incorporate relevant sources. The underlying ideas and arguments are mine; the wording, English phrasing, translation, and assistance with sources were supported by AI.
 
-## Thoughts-about-LLMs. Just a few thoughts 
+## Thoughts-about-LLMs and AI. Just a few thoughts 
 
 ---
 
@@ -12,7 +12,10 @@ It predicts the next token—but in doing so, it can build surprisingly rich int
 but it's a great tool it can help in multiple fields
 ----
 
-## and for that I set out to solve AI's energy problem.( From the Arc Reactor to biology )
+## and for that I set out to solve energy problem. that we need to solve in order to achieve progress in creating more powerful language models, or even if we manage to create true intelligence
+
+
+## ( From the Arc Reactor to biology )
 
 Every conversation about the AI revolution eventually becomes a conversation about models. Parameter counts, architectures, release dates. The more I read, the more I became convinced that the real question was buried underneath all of that noise:
 
