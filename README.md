@@ -1,4 +1,4 @@
-> **A Note** on the Use of AI
+> **A Note :**
 I used AI to help with the English phrasing and translation of this work because English is not my first language. The ideas themselves are entirely my own personal thoughts and hypotheses. I used AI primarily to express those ideas more clearly and naturally in English, so that they could be accessible to a wider audience. I also used AI to help incorporate relevant sources. The underlying ideas and arguments are mine; the wording, English phrasing, translation, and assistance with sources were supported by AI.
 
 ## Thoughts-about-LLMs. Just a few thoughts 
