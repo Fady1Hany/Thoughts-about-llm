@@ -266,3 +266,277 @@ If such a connection were ever established, it would raise a fascinating questio
 > It is worth being explicit: neither claim is established science. The first is a contested interpretation of behavioral data. The second is a forward-looking perspective on an unproven technology. Both sit firmly in the territory of open questions, not answers.
 
 > I should also be clear that I am not a specialist in quantum computing, quantum physics, neuroscience, or any field directly related to these questions. I am exploring this idea as a speculative hypothesis, not presenting myself as an expert or claiming that it is scientifically established.
+
+## Update
+
+## 10. Why Do We Want AGI?
+
+There is a fundamental question that rarely gets asked in the AI race:
+
+Why do we need AGI in the first place?
+
+Human intelligence itself is specialized.
+
+A doctor is not an engineer. An engineer is not a painter. A painter is not a driver.
+
+And civilization works remarkably well precisely because we divide labor between different specialists.
+
+So if specialized AI can eventually match the best engineers in programming, the best doctors in medicine, and the best drivers in driving — each within their own domain — why do we need one system that does all of these things at once?
+
+The scientific argument for AGI is generalization: the ability to learn something in one context and transfer that capability to another.
+
+The economic argument is that hundreds of specialized systems that cannot communicate with one another create enormous coordination costs. A general system could potentially eliminate much of that friction.
+
+But there is a problem:
+
+Most jobs don't actually require combining completely unrelated fields at maximum depth.
+
+Nobody needs a doctor who simultaneously carries the entire knowledge of software engineering in their head.
+
+Nobody needs a programmer who simultaneously carries the entire knowledge of medicine.
+
+Which raises a more important question:
+
+Is AGI really an engineering necessity — or is it a strategic objective?
+
+Because whoever controls a sufficiently general AI platform could potentially distribute it across every market at once.
+
+That turns the AGI race from a purely technological race into an enormous economic bet.
+
+---
+
+## 11. The Problem Isn't the Technology. It's the Investment Case.
+
+A bubble doesn't require stupid people.
+
+It requires smart people whose incentives make it difficult to leave.
+
+Everyone thinks they will exit before the crash.
+
+Everyone feels they have to invest because everyone else is investing.
+
+That is one of the uncomfortable parallels with 2008.
+
+Back then, one of the fundamental assumptions was that housing prices would continue rising.
+
+Today, there is a different assumption:
+
+AGI will arrive, and the economic value it creates will be large enough to justify the hundreds of billions — and potentially trillions — being invested to build it.
+
+The problem isn't that this is impossible.
+
+The problem is that the size of the bet has become enormous relative to the revenues being generated today.
+
+---
+
+## 12. AI Factories
+
+Data centers are increasingly being treated as something more than buildings full of servers.
+
+They are being presented as:
+
+AI Factories.
+
+And that isn't merely a branding exercise.
+
+It also has a financial function.
+
+Under a traditional infrastructure model, financing can be secured against the land and buildings.
+
+But in the new AI infrastructure model, expensive GPUs, power infrastructure, and even massive energy assets supporting the data center can become part of the economic calculation supporting larger amounts of financing.
+
+And there is a simple problem:
+
+Land does not depreciate like a GPU.
+
+Advanced GPU infrastructure can become obsolete surprisingly quickly, with major replacement cycles often measured in roughly one to two years.
+
+That means part of the collateral itself is exposed to technological depreciation.
+
+Yes, an older GPU can still generate substantial revenue if demand remains strong.
+
+But from a lender's perspective, an asset that can lose value rapidly is still a risk sitting inside the collateral structure.
+
+---
+
+## 13. What If This Is a Bubble?
+
+If we use 2008 as a historical reference point, the biggest consequences did not appear immediately after the underlying problems began.
+
+It took years.
+
+If — purely as a historical thought experiment — the AI inflection point occurs around 2027–2028, then applying a roughly nine-year interval would put us somewhere around:
+
+2036.
+
+That is not a prediction of a crash date.
+
+Bubbles don't run on schedules.
+
+The point is simply that excessive investment can continue for years before the bill finally arrives.
+
+---
+
+## 14.1 Then We Get to the Question That Actually Pays the Bills:
+
+Who Is Going to Pay?
+
+Suppose the four biggest American AI labs — ChatGPT, Gemini, Claude, and Grok — each reach 30 million paying subscribers.
+
+That's 120 million paying users in total.
+
+At $100 per month:
+
+120 million × $100 × 12 = $144 billion per year.
+
+That sounds enormous.
+
+But if total annual spending is around $110 billion, the theoretical profit is only about:
+
+$30 billion.
+
+And even that is an extremely optimistic scenario.
+
+Because it assumes:
+
+- Massive consumer adoption.
+- 120 million paying subscribers.
+- A very high average price.
+- No major additional expenses.
+- No meaningful price erosion.
+- And essentially no other significant operating costs.
+
+In other words:
+
+You need an extraordinary amount of optimism just to make the numbers work.
+
+---
+
+## 14.2 What Happens at a Price the Market Can Actually Bear?
+
+120 million subscribers × $20 per month:
+
+≈ $29 billion per year.
+
+Against approximately $110 billion of annual spending.
+
+The result:
+
+≈ $81 billion annual deficit.
+
+Look at the size of the gap:
+
++$30 billion in the extremely optimistic scenario.
+
+Versus:
+
+−$81 billion in the more realistic one.
+
+That's a difference of more than $110 billion per year.
+
+And that isn't a minor problem with the business model.
+
+That is the business-model problem.
+
+
+---
+
+## 15. But This Doesn't Mean AI Is Worthless
+
+This distinction matters.
+
+None of this proves that AI has failed.
+
+It doesn't prove that AGI won't happen.
+
+And it doesn't prove that today's investment will end in a collapse.
+
+There is enormous potential economic value that subscription revenue doesn't capture.
+
+AI could increase productivity across entire economies.
+
+It could create entirely new industries.
+
+It could radically reduce the cost of programming, scientific research, medicine, and engineering.
+
+It could produce applications that we cannot even imagine today.
+
+So the Egypt comparison is not a verdict on the technology.
+
+It is asking a different question:
+
+Does the amount of capital being invested today make sense relative to the revenues and returns that can actually be demonstrated today?
+
+And that question is much harder to answer.
+
+---
+
+## 16. There Is Another Important Lesson
+
+Machines don't need to become copies of humans in order to outperform humans.
+
+A camera beats the eye at magnification.
+
+But the eye and brain beat a camera at real-time perception and context.
+
+An airplane beats a bird in speed and distance.
+
+But a bird wins on other dimensions, such as adaptation and takeoff.
+
+A microscope beats the eye at microscopic vision — although in many comparisons, the more appropriate technological competitor to the eye is actually the camera.
+
+The broader lesson is:
+
+Superior performance doesn't require reproducing the original.
+
+A machine can outperform humans on a particular axis without becoming a "synthetic human."
+
+And that makes the AGI question even more interesting.
+
+If we can build dozens of specialized systems that outperform humans on different axes…
+
+Why insist on building one system that has to do everything?
+
+---
+
+## 17. The Bottom Line
+
+Perhaps the fundamental mistake in the AGI debate is treating AGI as:
+
+a technological necessity.
+
+When a large part of the motivation may actually be:
+
+a strategic bet.
+
+The goal isn't necessarily to build one machine that knows medicine, programming, engineering, philosophy, and everything else simultaneously.
+
+The strategic goal may be to build a general platform that can be distributed across all of those markets.
+
+That explains the scale of the race.
+
+But it doesn't solve the economic problem.
+
+Because owning the world's best AI platform does not automatically mean that its revenues will cover the cost of building it.
+
+So the real question isn't:
+
+"Can we build AGI?" 
+
+It's:
+
+"Will the economic value created by AGI be greater than the capital we're investing today to reach it?"
+
+Maybe the answer is yes.
+
+Maybe it isn't.
+
+But one thing is already clear:
+
+The money being bet on the future is vastly larger than the returns that can be demonstrated in the present.
+
+And that is why the AI race may not simply be the most expensive investment in history.
+
+It may be:
+
+The most expensive bet in history.
