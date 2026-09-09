@@ -461,7 +461,7 @@ It could radically reduce the cost of programming, scientific research, medicine
 
 It could produce applications that we cannot even imagine today.
 
-So the Egypt comparison is not a verdict on the technology.
+So this readme is not a verdict on the technology.
 
 It is asking a different question:
 
