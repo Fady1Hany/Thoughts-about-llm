@@ -542,7 +542,7 @@ It may be:
 The most expensive bet in history.
 
 ---
-## can we create a AGI without betting ?
+## can we create an AGI without betting ?
 
 ## My Hypothesis: Context, Filtration, and Continuous Learning
 
