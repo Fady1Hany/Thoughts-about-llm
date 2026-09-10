@@ -584,11 +584,11 @@ After an AI model has been trained, it generally doesn’t automatically retain 
 
 Otherwise, the AI can keep new information only within the context it currently has access to.
 
-So where does the AI actually keep that information?
+So where does the AI actually keep that information ?
 
 **Inside the context window.**
 
-If the information is no longer present in the context window, the model doesn’t have access to it anymore. It doesn’t “remember” it in the same way a human does... about theis is not actually is a problem
+If the information is no longer present in the context window, the model doesn’t have access to it anymore. It doesn’t “remember” it in the same way a human does... **but this is not actually a problem**
 
 ## The Lost in the Middle Problem
 
