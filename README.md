@@ -540,3 +540,250 @@ And that is why the AI race may not simply be the most expensive investment in h
 It may be:
 
 The most expensive bet in history.
+
+---
+## can we create a AGI without betting ?
+
+## My Hypothesis: Context, Filtration, and Continuous Learning
+
+I don’t think AI will necessarily be able to make a breakthrough in the context problem. The reason is that **context, in human brain, is basically equivalent to memory and experience**.
+
+So if AI were able to overcome this limitation, then, to a large extent, it would be able to learn almost anything.
+
+That’s the point I want to stop at.
+
+Context, in human brain, is like memory or experience. If AI can overcome this limitation, then it would have something like **continuous learning**: it would be able to retain information over time, collect new information, and filter it.
+
+## Human Information Filtration
+
+One of the things that still distinguishes the human brain is its ability to **filter information**.
+
+For example, during a normal day, you might receive hundreds of pieces of information. By the end of the day, you won’t remember most of them. You won’t remember what you ate, what the person standing in front of you in a line was wearing, or exactly what someone you passed on the street was wearing.
+
+Unless something important happened—for example, while you were greeting someone, they told you something important—you probably won’t remember all those details.
+
+And even after a week, two weeks, or three weeks, you might remember the event itself, but you may not remember who told you about it.
+
+That is one of the things that distinguishes the human brain:
+
+**It is able to filter the data it receives and decide what is worth retaining.**
+
+## How AI Currently Handles Information
+
+Currently, we are still doing a lot of this filtering for AI.
+
+When we train an AI model, we filter and curate the data before training the model on it.
+
+As a result, the AI itself doesn’t really perform the same kind of continuous, human-like filtering and memory formation.
+
+# Continuous Human Memory
+
+The second thing that distinguishes the human brain is that it can **retain information continuously over time**.
+
+After an AI model has been trained, it generally doesn’t automatically retain newly acquired information as part of its long-term knowledge unless we retrain it, fine-tune it, or use some other mechanism for updating its parameters.
+
+Otherwise, the AI can keep new information only within the context it currently has access to.
+
+So where does the AI actually keep that information?
+
+**Inside the context window.**
+
+If the information is no longer present in the context window, the model doesn’t have access to it anymore. It doesn’t “remember” it in the same way a human does.
+
+## The Lost in the Middle Problem
+
+The **“Lost in the Middle”** problem makes this even worse.
+
+Even when the information is inside the context window, the model can still have difficulty effectively using information that appears in the middle of a very long context.
+
+## Context Management and Harnesses
+
+However, I think there is another important possibility.
+
+If we can solve the **context-management problem**, and technologies such as **harnesses** can already demonstrate how powerful this can be, then this could change the situation significantly.
+
+A recent example is **ARC-AGI-3**. ARC-AGI-3 is designed to test whether an AI system can interact with unfamiliar environments, discover the underlying rules through interaction, and solve problems that it has not simply been trained to recognize.
+
+What is especially interesting is what happened with **GPT-5.6 Astra** on this benchmark.
+
+With the standard harness, it achieved around **62.7%**, but when it was run through the specialized harness with better management of the model’s reasoning state and context, it reached around **99.9%** at the higher reasoning level.
+
+The important point for me is not simply the number itself.
+
+The important point is that:
+
+**The same underlying model can behave dramatically differently depending on how its context and state are managed.**
+
+This suggests that the model’s weights are not necessarily the entire story.
+
+The system around the model—the harness, memory, context management, tools, state management, and reasoning process—can have an enormous impact on what the model is actually capable of doing.
+
+## The Filtration Capability
+
+This connects directly to my idea about **filtration**.
+
+Imagine that instead of trying to train an AI intensively on every single field, we train it on the basic capabilities first, almost exactly like raising a child.
+
+We teach it:
+
+- Mathematics
+- Science
+- English and language
+- Problem solving
+- General reasoning
+- Basic knowledge about the world
+
+But we don’t necessarily teach it every specialized field in depth.
+
+Instead, we let it interact with the real world and with people who have expertise in different fields.
+
+## Learning From Experts
+
+For example, the AI could interact with doctors.
+
+Imagine that there are **100 doctors**, ranging from relatively inexperienced doctors to extremely experienced experts, and all of them provide information to the AI.
+
+Suppose that, collectively, they give the AI **5 million pieces of information**.
+
+Right now, we would have to rely heavily on humans and existing data-curation pipelines to decide:
+
+- Which information is valuable?
+- Which information is wrong?
+- Which information is outdated?
+- Which information is contradictory?
+- Which information is actually useful?
+
+But suppose the AI itself becomes capable of performing the same kind of **filtration that the human brain performs**.
+
+It could potentially take those 5 million pieces of information and determine that, for example, only **2 million pieces are genuinely valuable**, while the other 3 million are low-quality, incorrect, redundant, or otherwise not worth retaining.
+
+Then OpenAI could use that high-quality information to improve the next version of the model.
+
+The 3 million low-quality pieces wouldn’t even reach the training process in the first place.
+
+So instead of simply giving the AI more and more data, we would give it the capability to:
+
+**Decide which data deserves to become knowledge.**
+
+# Why the Internet Is Not Enough
+
+I don’t think this filtration can simply be delegated to the Internet.
+
+The Internet contains conflicting information about almost everything.
+
+For almost any subject, you can find people who support a claim and people who reject it.
+
+For example, in medicine, you can find someone claiming that vaccines cause cancer, while you can also find medical professionals saying that this claim is false.
+
+Simply asking the AI to search the Internet does not solve the fundamental problem.
+
+We need a **real mechanism for evaluating information**.
+
+Even if we restrict the information source to medical textbooks, that still doesn’t completely solve the problem.
+
+The AI still needs to understand:
+
+- What information is reliable?
+- How different pieces of information relate to each other?
+- What has become outdated?
+- How should contradictions be resolved?
+
+What we really need is an AI that can **perform genuine information filtration**.
+
+If we achieve that, then we have given the AI another fundamental capability:
+
+**The ability to decide what is worth learning.**
+
+# Filtration Alone Is Not Enough
+
+Even if we solve the **filtration problem**, we would still need to keep training new versions of the model.
+
+Why?
+
+Because if the model’s context and memory capabilities remain weak, we would have to periodically take the valuable information it has accumulated, incorporate that information into the training data, and train a new model on it.
+
+So we would still be stuck in a cycle:
+
+**AI learns → collect new information → filter it → retrain a new model → the new model learns more → repeat.**
+
+We would still not have true continuous learning inside the same system.
+
+## Solving Both Filtration and Context
+
+But if we solve **both problems—the filtration problem and the context/memory problem—**then we have something much more powerful.
+
+We would effectively have created an AI that can **learn continuously on its own**.
+
+It would be able to:
+
+**Interact with the world → receive enormous amounts of new information → filter that information → decide what is valuable → store it in long-term memory → use that accumulated knowledge later.**
+
+In that sense, we would have something much closer to a human learning continuously throughout its life, rather than a model that is trained once and then essentially remains fixed.
+
+## Context Without Filtration
+
+There is an important point on the other side as well.
+
+If we solve the **context problem but don’t solve the filtration problem**, then simply giving one model hundreds and hundreds of terabytes—or even much more—of storage doesn’t necessarily have much value.
+
+Because the model would continuously accumulate new information without being able to properly determine what is important and what isn’t.
+
+Eventually, after one year, two years, three years, or however long it takes, its memory could become filled with enormous amounts of:
+
+- Irrelevant information
+- Redundant information
+- Contradictory information
+- Outdated information
+- Low-quality information
+
+At that point, the storage may be enormous, but the **useful knowledge contained within it would not necessarily increase proportionally**.
+
+Eventually, the system could reach a point where its new memory is mostly filled with information that has little value, and the continuous-learning process would begin to break down.
+
+So solving context alone is not enough.
+
+## The Two Fundamental Capabilities
+
+We need both:
+
+**Context / Persistent Memory → The ability to retain information continuously.**
+
+**Filtration → The ability to decide what information is actually worth retaining.**
+
+Without context, the AI cannot maintain its experience over time.
+
+Without filtration, its accumulated experience eventually becomes an enormous pile of information with decreasing usefulness.
+
+# The Bigger Picture
+
+The real breakthrough, therefore, would be combining the two:
+
+**Scalable Long-Term Memory + Intelligent Information Filtration = Continuous Learning**
+
+If we add strong reasoning and the ability to interact with the real world, we could potentially have a system that starts with relatively general knowledge and fundamental capabilities, then continuously develops expertise across different domains through experience.
+
+Instead of trying to build a separate, massively trained model for every possible field, we could have **one continuously learning general system** that acquires expertise over time.
+
+We would essentially educate the AI like a child:
+
+**Teach it the fundamentals → let it interact with the world → let it experience different domains → let it filter what it learns → store the valuable knowledge → use that knowledge to learn more.**
+
+The storage would not literally be infinite, of course. But it could be continuously expanded, allowing the system’s accumulated experience to grow over years.
+
+## The Real Question
+
+So the deeper question is not simply:
+
+**“How large can the context window become?”**
+
+The deeper question is:
+
+**“Can an AI manage its experience the way a human manages memory—deciding what to retain, what to discard, what to retrieve, and how to continuously build knowledge from it?”**
+
+If we can solve **both the context/memory problem and the filtration problem**, then we may no longer need to think about AI as something that is trained once and then deployed.
+
+We could instead think about it as:
+
+> **Intelligence that continuously learns throughout its existence.**
+
+And that, in my view, could be one of the most important paths toward **AGI**.
