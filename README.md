@@ -576,7 +576,7 @@ When we train an AI model, we filter and curate the data before training the mod
 
 As a result, the AI itself doesn’t really perform the same kind of continuous, human-like filtering and memory formation.
 
-# Continuous Human Memory
+## Continuous Human Memory
 
 The second thing that distinguishes the human brain is that it can **retain information continuously over time**.
 
@@ -588,11 +588,11 @@ So where does the AI actually keep that information?
 
 **Inside the context window.**
 
-If the information is no longer present in the context window, the model doesn’t have access to it anymore. It doesn’t “remember” it in the same way a human does.
+If the information is no longer present in the context window, the model doesn’t have access to it anymore. It doesn’t “remember” it in the same way a human does... about theis is not actually is a problem
 
 ## The Lost in the Middle Problem
 
-The **“Lost in the Middle”** problem makes this even worse.
+The **“Lost in the Middle”** is the actual problem of context window .
 
 Even when the information is inside the context window, the model can still have difficulty effectively using information that appears in the middle of a very long context.
 
@@ -604,7 +604,7 @@ If we can solve the **context-management problem**, and technologies such as **h
 
 A recent example is **ARC-AGI-3**. ARC-AGI-3 is designed to test whether an AI system can interact with unfamiliar environments, discover the underlying rules through interaction, and solve problems that it has not simply been trained to recognize.
 
-What is especially interesting is what happened with **GPT-5.6 Astra** on this benchmark.
+What is especially interesting is what happened with **GPT-6 Astra** on this benchmark.
 
 With the standard harness, it achieved around **62.7%**, but when it was run through the specialized harness with better management of the model’s reasoning state and context, it reached around **99.9%** at the higher reasoning level.
 
@@ -617,6 +617,9 @@ The important point is that:
 This suggests that the model’s weights are not necessarily the entire story.
 
 The system around the model—the harness, memory, context management, tools, state management, and reasoning process—can have an enormous impact on what the model is actually capable of doing.
+
+## Context Management and Harnesses have a huge impact, but unless we solve the “Lost in the Middle” problem, I don’t think this approach will hold up as context windows get much longer.
+
 
 ## The Filtration Capability
 
@@ -665,7 +668,7 @@ So instead of simply giving the AI more and more data, we would give it the capa
 
 **Decide which data deserves to become knowledge.**
 
-# Why the Internet Is Not Enough
+## Why the Internet Is Not Enough
 
 I don’t think this filtration can simply be delegated to the Internet.
 
@@ -679,7 +682,7 @@ Simply asking the AI to search the Internet does not solve the fundamental probl
 
 We need a **real mechanism for evaluating information**.
 
-Even if we restrict the information source to medical textbooks, that still doesn’t completely solve the problem.
+Even if we restrict the information source to medical textbooks, that still doesn’t completely solve the problem, because scientific knowledge isn’t contained within books, especially when you consider the broader landscape of science. 
 
 The AI still needs to understand:
 
@@ -694,7 +697,7 @@ If we achieve that, then we have given the AI another fundamental capability:
 
 **The ability to decide what is worth learning.**
 
-# Filtration Alone Is Not Enough
+## Filtration Alone Is Not Enough
 
 Even if we solve the **filtration problem**, we would still need to keep training new versions of the model.
 
@@ -708,9 +711,9 @@ So we would still be stuck in a cycle:
 
 We would still not have true continuous learning inside the same system.
 
-## Solving Both Filtration and Context
+## Solving Both Filtration and Context ( The Lost in the Middle Problem )
 
-But if we solve **both problems—the filtration problem and the context/memory problem—**then we have something much more powerful.
+But if we solve **both problems—the filtration problem and the context/memory problem—** then we have something much more powerful.
 
 We would effectively have created an AI that can **learn continuously on its own**.
 
@@ -720,7 +723,7 @@ It would be able to:
 
 In that sense, we would have something much closer to a human learning continuously throughout its life, rather than a model that is trained once and then essentially remains fixed.
 
-## Context Without Filtration
+## Context ( The Lost in the Middle Problem ) Without Filtration
 
 There is an important point on the other side as well.
 
@@ -754,7 +757,7 @@ Without context, the AI cannot maintain its experience over time.
 
 Without filtration, its accumulated experience eventually becomes an enormous pile of information with decreasing usefulness.
 
-# The Bigger Picture
+## The Bigger Picture
 
 The real breakthrough, therefore, would be combining the two:
 
@@ -780,7 +783,7 @@ The deeper question is:
 
 **“Can an AI manage its experience the way a human manages memory—deciding what to retain, what to discard, what to retrieve, and how to continuously build knowledge from it?”**
 
-If we can solve **both the context/memory problem and the filtration problem**, then we may no longer need to think about AI as something that is trained once and then deployed.
+If we can solve **both the context/memory problem ( The Lost in the Middle Problem ) and the filtration problem**, then we may no longer need to think about AI as something that is trained once and then deployed.
 
 We could instead think about it as:
 
