@@ -542,7 +542,7 @@ It may be:
 The most expensive bet in history.
 
 ---
-## can we create an AGI without betting ?
+## 18. can we create an AGI without betting ?
 
 ## My Hypothesis: Context, Filtration, and Continuous Learning
 
@@ -618,7 +618,7 @@ This suggests that the model’s weights are not necessarily the entire story.
 
 The system around the model—the harness, memory, context management, tools, state management, and reasoning process—can have an enormous impact on what the model is actually capable of doing.
 
-## Context Management and Harnesses have a huge impact, but unless we solve the “Lost in the Middle” problem, I don’t think this approach will hold up as context windows get much longer.
+**Context Management and Harnesses have a huge impact, but unless we solve the “Lost in the Middle” problem, I don’t think this approach will hold up as context windows get much longer.**
 
 
 ## The Filtration Capability
@@ -690,6 +690,10 @@ The AI still needs to understand:
 - How different pieces of information relate to each other?
 - What has become outdated?
 - How should contradictions be resolved?
+  
+I think practical experimentation could help build this kind of filtration in some domains. In coding, for example, an AI could actually build things, test them, observe what works and what fails, and gradually learn to distinguish between correct and incorrect approaches.
+But I don't think you can apply this approach equally to every field.
+Take medicine, for example. Are we really going to give an AI access to conduct actual clinical drug trials so it can learn from its successes and failures? Obviously not
 
 What we really need is an AI that can **perform genuine information filtration**.
 
