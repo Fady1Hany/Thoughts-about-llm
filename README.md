@@ -616,7 +616,7 @@ The important point is that:
 
 This suggests that the model’s weights are not necessarily the entire story.
 
-The system around the model—the harness, memory, context management, tools, state management, and reasoning process—can have an enormous impact on what the model is actually capable of doing.
+The system around the model—the harness, memory, context management, tools and state management can have an enormous impact on what the model is actually capable of doing.
 
 **Context Management and Harnesses have a huge impact, but unless we solve the “Lost in the Middle” problem, I don’t think this approach will hold up as context windows get much longer.**
 
@@ -767,7 +767,9 @@ The real breakthrough, therefore, would be combining the two:
 
 **Scalable Long-Term Memory + Intelligent Information Filtration = Continuous Learning**
 
-If we add llm with strong reasoning ( with fix of The Limits of Long-Context Reasoning in Automated Bug Fixing problem ) and the ability to interact with the real world, we could potentially have a system that starts with relatively general knowledge and fundamental capabilities, then continuously develops expertise across different domains through experience. 
+If we add llm with strong reasoning ( with fix The Limits of Long-Context Reasoning in Automated Bug Fixing problem ) and the ability to interact with the real world ( this can be achieved by harness )
+
+we could potentially have a system that starts with relatively general knowledge and fundamental capabilities, then continuously develops expertise across different domains through experience. 
 
 Instead of trying to build a separate, massively trained model for every possible field, we could have **one continuously learning general system** that acquires expertise over time.
 
@@ -795,4 +797,4 @@ We could instead think about it as:
 
 And that, in my view, could be one of the most important paths toward **AGI**.
 
-> **in this scenario AGI will be The entire system ( the system of filtration + the context window + llm )**
+> **in this scenario AGI will be The entire system ( the system of filtration + the context window + llm + harness )**
