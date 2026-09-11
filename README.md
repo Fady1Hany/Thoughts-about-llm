@@ -546,7 +546,7 @@ The most expensive bet in history.
 
 ## My Hypothesis: Context, Filtration, and Continuous Learning
 
-I don’t think AI will necessarily be able to make a breakthrough in the context problem. The reason is that **context, in human brain, is basically equivalent to memory and experience**.
+I think to make AGI we need to make a breakthrough in the context problem. The reason is that **context, in human brain, is basically equivalent to memory and experience**.
 
 So if AI were able to overcome this limitation, then, to a large extent, it would be able to learn almost anything.
 
@@ -790,3 +790,5 @@ We could instead think about it as:
 > **Intelligence that continuously learns throughout its existence.**
 
 And that, in my view, could be one of the most important paths toward **AGI**.
+
+> **in this scenario AGI will be The entire system ( the system of filtration + the context window + llm )**
