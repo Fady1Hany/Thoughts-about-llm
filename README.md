@@ -767,7 +767,7 @@ The real breakthrough, therefore, would be combining the two:
 
 **Scalable Long-Term Memory + Intelligent Information Filtration = Continuous Learning**
 
-If we add strong reasoning and the ability to interact with the real world, we could potentially have a system that starts with relatively general knowledge and fundamental capabilities, then continuously develops expertise across different domains through experience.
+If we add llm with strong reasoning ( with fix of The Limits of Long-Context Reasoning in Automated Bug Fixing problem ) and the ability to interact with the real world, we could potentially have a system that starts with relatively general knowledge and fundamental capabilities, then continuously develops expertise across different domains through experience. 
 
 Instead of trying to build a separate, massively trained model for every possible field, we could have **one continuously learning general system** that acquires expertise over time.
 
