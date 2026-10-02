@@ -799,7 +799,7 @@ And that, in my view, could be one of the most important paths toward **AGI**.
 
 > **in this scenario AGI will be The entire system ( the system of filtration + the context window + llm + harness )**
 
-## update 
+## Update
 
 ## 19. AI, AI Agents, Reasoning, and “Self-Generated Goals”
 
@@ -1409,4 +1409,289 @@ So I don't think the argument:
 necessarily follows.
 
 Those are two separate questions.
+
+## Update 
+
+## 20. The Deeper Economic Problem AI Could Create for Software — and Potentially for Innovation Itself :
+
+There is a deeper consequence of AI in software that I think is being underestimated.
+
+If AI eventually becomes capable of producing essentially any software from a natural-language description, then the problem is not simply that software engineers will lose their jobs. The entire economic structure of software companies could change.
+
+Think about a browser, an antivirus, a VPN, a photo editor, or some other software product.
+
+If I can simply tell an AI:
+
+> "Build me a browser with these features."
+
+
+
+and it can reliably create the entire product for me, then why would I pay a company for the product?
+
+The same applies to an antivirus:
+
+> "Build me an antivirus that detects X, Y, and Z, updates itself, and protects my computer."
+
+
+
+Or a VPN:
+
+> "Build me a VPN with these security and privacy requirements."
+
+
+
+If AI can actually produce these products reliably, then the software itself stops being a strong barrier to entry.
+
+And this creates a fundamental difference between AI-driven software production and previous industrial automation.
+
+## Consider a factory.
+
+Suppose a company owns an extremely advanced machine that replaces 100 workers. The workers disappear, but the machine is still physically located inside the factory. The average consumer cannot simply take that machine home and manufacture the product themselves.
+
+Therefore, the consumer still needs the factory.
+
+The factory retains its economic value because the productive capability is not available to everyone.
+
+But software is different.
+
+If the productive capability is an AI model that every consumer can access from their own computer or through a cheap service, then the situation changes completely.
+
+The customer doesn't necessarily need the software company anymore.
+
+The customer possesses access to the production mechanism itself.
+
+So if AI can generate software reliably enough, a huge number of traditional software companies could face a fundamental problem:
+
+> Why buy the product when you can generate the product?
+
+
+
+That doesn't necessarily mean every software company disappears. Companies can still have advantages from proprietary data, distribution, trust, infrastructure, regulatory relationships, networks, specialized access, etc.
+
+But if a company's primary asset is simply:
+
+> "We have engineers who can write this software."
+
+
+
+then that advantage becomes much weaker if everyone has access to AI capable of producing the same software.
+
+And this creates another interesting consequence.
+
+Many software companies may be forced to become AI companies themselves.
+
+Not necessarily because they want to, but because if software generation becomes commoditized, simply selling software code may no longer be a sufficiently defensible business model.
+
+
+---
+
+But this creates an even deeper problem
+
+Suppose this transformation actually happens.
+
+What happens to software engineering itself?
+
+Today, software development is not simply:
+
+> "Someone tells an engineer what to build, and the engineer writes code."
+
+
+
+The engineer interacts with real problems.
+
+A client asks for feature X.
+
+The engineer starts implementing X.
+
+During implementation, the engineer encounters problem Y.
+
+Problem Y wasn't necessarily part of the original requirements.
+
+The engineer recognizes that Y is not just a random bug. It is a broader technical problem.
+
+They investigate it.
+
+They develop a new solution.
+
+Maybe they create a new abstraction.
+
+Maybe they create a new design pattern.
+
+Maybe they invent a new protocol.
+
+Maybe they discover a limitation in an existing architecture.
+
+And eventually that solution becomes part of the collective knowledge of the field.
+
+This is one of the mechanisms through which software engineering evolves.
+
+Now imagine that the entire process becomes:
+
+> Human: "Build me X."
+
+
+
+> AI: "Done."
+
+
+
+The human requesting the software may not know enough about software engineering to recognize problem Y in the first place.
+
+They don't know that Y exists.
+
+They don't know that the implementation is encountering a deeper architectural problem.
+
+They don't have the technical background to ask:
+
+> "Why does this happen?"
+
+
+
+or
+
+> "Could there be a general solution to this?"
+
+
+
+or
+
+> "Should we create a new abstraction for this entire class of problems?"
+
+
+
+The AI might be capable of solving Y if it encounters it.
+
+But that's not the same thing.
+
+The problem is that the human expert who would have discovered Y may no longer be present in the process.
+
+And this creates what I think is a much deeper issue:
+
+The expertise pipeline
+
+Today, expertise develops through a progression:
+
+Junior → Engineer → Senior → Expert → New problems → New discoveries
+
+A junior engineer works on relatively simple problems.
+
+They gain experience.
+
+They encounter unusual failures.
+
+They learn how systems actually behave.
+
+Eventually they become senior engineers.
+
+Those senior engineers encounter problems that previous generations haven't solved.
+
+They develop new abstractions and techniques.
+
+Those discoveries then become part of the next generation's knowledge.
+
+But if AI eliminates the junior and mid-level work because the AI can perform it automatically, you potentially eliminate part of the training pipeline that produces future experts.
+
+And this is not unique to software.
+
+The same mechanism could theoretically exist in medicine.
+
+A junior doctor sees thousands of cases.
+
+Eventually they encounter an unusual case.
+
+They notice something strange.
+
+They investigate it.
+
+Years later, they become an expert who recognizes patterns that weren't obvious to previous generations.
+
+If AI performs all the routine diagnostic work, the junior doctor may never receive the same volume or variety of experience.
+
+The same question applies to:
+
+physics
+
+chemistry
+
+engineering
+
+biology
+
+mathematics
+
+scientific research
+
+cybersecurity
+
+basically any field where expertise develops through interaction with difficult and unexpected problems.
+
+
+And this creates a potential recursive problem:
+
+> Fewer junior practitioners → fewer future experts → fewer people capable of recognizing unknown problems → fewer new discoveries → fewer opportunities to train the next generation of experts.
+
+
+
+That is fundamentally different from saying:
+
+> "AI will replace programmers."
+
+
+
+The deeper concern is:
+
+> What happens if we automate the process through which humans acquire the expertise necessary to discover the next generation of problems?
+
+
+
+
+---
+
+And there's an even more fundamental distinction.
+
+AI might become extremely good at solving known problems.
+
+It might eventually become extremely good at taking a requirement and producing an implementation.
+
+But there is a difference between:
+
+"Solve this problem."
+
+and
+
+"Discover that there is a problem here in the first place."
+
+If I don't know that a problem exists, I can't ask the AI to solve it.
+
+For example, before MCP existed, an AI agent couldn't simply be told:
+
+> "Implement MCP."
+
+
+
+because MCP hadn't been invented yet.
+
+Someone had to recognize a previously existing limitation, conceptualize the problem, and propose a new abstraction.
+
+That's the distinction I'm concerned about.
+
+If humans remain deeply involved in the fields where AI is deployed, they continue generating new problems, new abstractions, and new ideas.
+
+But if AI completely replaces the human expertise pipeline, we could eventually end up with a strange situation where AI is extremely good at operating inside the existing intellectual framework while the human population increasingly loses the expertise required to extend that framework.
+
+If AI eventually becomes capable of independently discovering genuinely new problems, developing new abstractions, conducting experiments, and producing paradigm-shifting discoveries, then this concern becomes much weaker.
+
+But if AI is primarily an extremely powerful system for solving problems that humans have already identified, then removing the human experts from the process could have consequences far beyond employment.
+
+It could affect the production of knowledge itself.
+
+And that's why I think the real question isn't simply:
+
+> "Will AI replace software engineers?"
+
+
+
+It's:
+
+> "If AI replaces the process through which we produce software engineers, scientists, doctors, researchers, and other experts, who—or what—produces the next generation of expertise and discovers the problems we don't even know exist yet?"
 
