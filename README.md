@@ -1695,3 +1695,15 @@ It's:
 
 > "If AI replaces the process through which we produce software engineers, scientists, doctors, researchers, and other experts, who—or what—produces the next generation of expertise and discovers the problems we don't even know exist yet?"
 
+My answer is: that “what” has to be AGI in the sense I described earlier in point **18** — a system capable of continuous learning.
+We do not have that yet.
+We are still in the period before it. We have models that can already generate software, produce plans, and solve problems that have already been named. We do not yet have a system that can retain experience over time, filter what is worth keeping, and use that knowledge to notice problems that nobody asked it to notice.
+And that is exactly why this question is not hypothetical.
+If we stop at the current kind of AI, we may replace a large part of the work through which human experts are made, without having anything that can replace what those experts eventually do: discover the next generation of unknown problems.
+So I do not think the way out is more generation.
+I think the way out is to reach that kind of AGI.
+Not a machine that is merely better at answering “build me X.”
+A machine that can learn continuously enough to discover the problems we do not yet know exist.
+Until we get there, we are in a dangerous interval:
+powerful enough to hollow out the expertise pipeline,
+not yet capable of taking its place.
