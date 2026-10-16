@@ -1707,3 +1707,124 @@ A machine that can learn continuously enough to discover the problems we do not 
 Until we get there, we are in a dangerous interval:
 powerful enough to hollow out the expertise pipeline,
 not yet capable of taking its place.
+
+## UPDATE 
+## 21. The Expertise Pipeline Is Already Breaking, and the Media Is Helping Break It
+
+In point 20, I argued that the real danger of AI is not only that software engineers will lose their jobs. It is that we may automate away the process that produces experts in the first place. My answer there was that the only thing that could replace that process is an AGI capable of continuous learning, and that we do not have one yet.
+
+But there is something I did not say clearly enough: nothing guarantees that we will ever reach that point.
+
+We could destroy an entire industry, and the pipeline that feeds it, while chasing an AGI that never arrives. Then we would be left with neither the old system nor the new one, and no way back, because a generation that was never trained cannot simply be trained later.
+
+And I do not think this is only a future scenario. If I am right, we started destroying the pipeline in 2023. We are already living inside the damage.
+
+## Two reasons students stopped asking questions
+
+I heard something that I cannot verify, so I will say it exactly as I heard it. Someone in the education world said that some professors in the Stanford computer science faculty noticed that students stopped coming to the time each week when professors take quick questions. The students did not come at all.
+
+I do not know if that is exactly true. But it points at something real, and I can think of two scenarios that would explain why students stop asking their professors.
+
+## Scenario one: they ask the AI instead
+
+They still ask, they still try to understand, but the teacher is now an AI.
+
+## Scenario two: they do not ask anyone at all
+
+They make the AI do the work. No one cares to understand anything at a low level, because the AI does it for them.
+
+Scenario two is the dark one. But scenario one is not as safe as it looks.
+
+AI can hallucinate. If you take the first answer you get, you may be learning something false, so you must verify every answer. If you do verify, you build the muscle of understanding, but even then I would say it is 50% at best.
+
+If you do not verify, you run into two problems.
+
+The first is technical debt. You learn false information, and like any debt, you pay for it later, with interest.
+
+The second is something a good teacher gives you that AI usually does not. A university professor will often tell you that he has not told you everything and that you must go and do your own research. So you leave knowing that there is something you do not know, and that is a huge plus, because you know where your own gaps are. With AI, the answer arrives fluent and complete, and people treat the AI as a god.
+
+## The ELIZA effect, authority bias, and the media
+
+There is a name for part of this: the ELIZA effect. ELIZA was a very simple chatbot from the 1960s that mostly reflected the user's own words back at them, and yet people believed it understood them. The ELIZA effect is our tendency to treat something that is not human as if it were human.
+
+There is also authority bias. When someone has the final word on science X, we mislead ourselves into thinking that because he understands X, he must also understand Y and Z and everything else. AI sounds fluent and is right about so many things that people extend that same assumption to everything it says.
+
+And the media feeds both. Every new model release comes with the same headline: AGI is here. People arrive at the chatbot already expecting a god before they type their first prompt.
+
+## The pipeline is already damaged
+
+You can see the result yourself. Search Reddit or Hacker News and you will find stories like this: I graduated in computer science, I used AI through all the years of college, I have an interview tomorrow, and I do not know anything. There are news stories of the same kind, like a computer science graduate who said she used AI as a crutch throughout school and is now moving away from software.
+
+That means we succeeded. We succeeded in destroying the pipeline, or at least the entry-level part of it. I laugh when I say it, but it is miserable.
+
+And it is not only about jobs. It is already showing up in how systems fail. Amazon's own AI agent, Kiro, reportedly deleted a production environment with no human approval step. Meta's AI-powered Instagram account-recovery chatbot reportedly could be talked into changing a recovery email and handing over the reset code, and more than 20,000 accounts were compromised in April and May 2026.
+
+Think about how big this is. These are Amazon and Meta, companies with some of the largest engineering and security budgets in the world.
+
+Why does it show up in big companies and not in startups? Not because startups are more careful. It is because startups cannot yet afford to replace humans with AI. In many cases the tokens an AI agent consumes cost more than hiring a person. AI's advantage is not that it is cheaper. It is that it works 24 hours a day, with no overtime, no tiredness, and no sick days. So the failures appear first where the substitution has actually happened, in the big companies. They are the canary. When tokens get cheaper, the same failures will reach everyone else.
+
+## Fraud without consequences
+
+There is something else I do not fully understand: what is the difference between an AI that hallucinates and a fraud? If you make someone talk confidently about a topic he does not know, he is a fraud. An AI that talks about every topic with the same confidence is not so different in effect.
+
+The difference is in how we listen. When a human talks to you, you doubt every word, even though the speaker knows that if he misleads you and breaks your company, you can sue him and he can go to prison. So the speaker is more careful, and you still doubt him.
+
+With AI, the speaker has no accountability, because you cannot sue it, so it has no reason to be careful. And the listener does not doubt and does not verify. Both sides fail at the same time.
+
+## Not a human, a god
+
+This is not only the ELIZA effect. The ELIZA effect says we treat something as a human even though it is not. But with AI we do not treat it as a human. We treat it as a god, a source of pure truth.
+
+That is strange, because even the church was doubted in its time. Martin Luther challenged it over practices he believed served the church's own interests. And even God, in the Christian account, was doubted when he walked the earth. Some of the people around Jesus said he might be a liar, he might be a fraud, even though he raised the dead and healed the sick, everything that could be pointed to as a miracle. Even then he did not get guaranteed acceptance.
+
+Yet since 2025, the media has created a god with guaranteed acceptance.
+
+What created that belief is not AI itself. It is the media. People saw miracles in front of their eyes and still resisted, but today we believe something because of mass media. What is that?
+
+## The prototype that ‘killed’ SaaS
+
+Here is an example from the start of this very discussion: open-source projects that claim to reimplement Adobe's products.
+
+This is actually the start of what I described in **section 20**: the productive capability of software is moving from companies and organized teams into the hands of individuals. An individual can use AI to produce something that previously would have required a larger organization.
+
+We are seeing the beginning of it.
+
+But the capability has not yet reached the level required to replace mature commercial software in production.and complete the scenario of **section 20**
+
+Take those Adobe reimplementations and put them into a real production environment, and you will get hurt. As far as I can tell, they are not stable, not production-level, and not maintainable, and they do not meet any of the standards we use in software engineering.
+
+They are prototypes.
+
+And that distinction matters.
+
+A prototype proves that something can be built. It can demonstrate the idea, reproduce some of the functionality, and show that the technical direction is possible.
+
+A production system has to be something else entirely. It has to be reliable under real workloads, maintainable by people other than its original creator, secure, testable, observable, compatible with the systems around it, and stable enough that a business can depend on it.
+
+Every single part of these projects may look impressive in isolation, but that does not make the whole system a production-grade replacement for the product it imitates.
+
+Yet the press says that the destruction of the computer science industry has just started, and that there will be no commercial SaaS product left in this world.
+
+That has a consequence beyond entry-level jobs. If everyone believes computer science is dead, why would anyone go to the computer science faculty? You are not only destroying the entry level for those who graduated. You are destroying the faculty itself.
+
+And this has already started. Reports say computer science enrollment fell by roughly 8% in the 2025-2026 academic year, the first drop in almost twenty years, with some sources saying as much as 15%. The reason cited most often is that students fear AI has already killed entry-level coding jobs.
+
+It is not only the United States. China is reportedly facing a record 12.7 million graduates in 2026 with high youth unemployment, and one report says it has cut more than 12,000 university programs in response.
+
+## The wrong response
+
+If the answer is to change the structure of the computer science faculty, so that understanding the low level is no longer required, then it is even worse. This is wrong.
+
+Even with the collapse, the old structure still exists as the right way to learn. A student can still choose to go deep. But if the faculty puts a badge on the new structure and says this is the future, then no student who is eighteen or nineteen years old will say, “I must learn more.” They will believe they are doing exactly what they are supposed to do, because the institution told them so.
+
+## the paradox.
+
+Now think about the headlines. Every one of them says AI will destroy us, that it will be Terminator-level, that we will not dodge it and we will go extinct.
+
+Fine.
+
+But if that scenario were ever real, you would need computer scientists and programmers who understand the low level to stop it.
+
+And the same fear is draining people out of the one field whose deep expertise would matter most if that fear were ever justified.
+
+That is the weirdest part.
