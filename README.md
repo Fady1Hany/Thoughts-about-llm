@@ -1828,3 +1828,791 @@ But if that scenario were ever real, you would need computer scientists and prog
 And the same fear is draining people out of the one field whose deep expertise would matter most if that fear were ever justified.
 
 That is the weirdest part.
+
+## Update 
+
+## How can we use the llms inside our company and still make sure our employees gain experience ?
+
+## AI Guidance and Control Layer for Coding Agents
+
+## 1. Scope and Authority
+
+The fundamental rule of this system is:
+
+**The AI must never implement functionality that the user has not explicitly authorized.**
+
+A coding agent can be extremely intelligent, capable, and knowledgeable. However:
+
+**Knowledge does not equal authority.**
+
+The human remains the authority over what the software is allowed to do.
+
+This creates a clear separation:
+
+- Functionality → controlled by the human.
+- Technical decisions → controlled by the human.
+- Architecture → may be delegated to the AI.
+- Plain code / implementation → may be delegated to the AI.
+
+The important principle is:
+
+**Architecture is flexible. Technical decisions are not. Functionality is not.**
+
+For example, suppose the human says:
+
+“We are building a website.”
+
+The AI should not immediately start creating pages, authentication, databases, APIs, dashboards, registration, or other features.
+
+Instead, it should establish what the user actually wants to build.
+
+If the user says:
+
+“I want to work on login.”
+
+Then the authorized functionality is login.
+
+The AI may implement what is genuinely required for login, but it must not independently expand the scope by creating:
+
+- Registration
+- Logout
+- Password reset
+- User profiles
+- Unrelated APIs
+- Unrelated refactoring
+- Additional product features
+
+The central idea is:
+
+**The AI may be capable of doing more than the user asked for. That does not mean it is authorized to do more.**
+
+## 2. Mode 1 — Typewriter Mode
+
+In Typewriter Mode, the AI behaves essentially like a highly capable programming typewriter.
+
+The user controls:
+
+- Functionality
+- Technical decisions
+- Architecture
+- Implementation
+- Code structure
+
+The AI's job is to translate the user's instructions into code and execute them.
+
+The AI should not silently:
+
+- Change the architecture
+- Refactor the project
+- Improve the implementation
+- Introduce a different technology
+- Make technical decisions
+- Add functionality
+- Rewrite code according to its own preferences
+
+If the user says:
+
+“Create this function and make it do X.”
+
+The AI writes that function.
+
+If the user specifies the architecture, the AI follows that architecture.
+
+If the user specifies the technical mechanism, the AI uses that mechanism.
+
+If the user specifies the implementation, the AI implements it.
+
+The purpose is not to make the AI less intelligent.
+
+The purpose is to restrict its authority.
+
+## 3. Typewriter Mode and Completeness Checking
+
+Typewriter Mode does not necessarily mean that the AI should interrupt the user whenever it notices something that could be improved.
+
+Instead, the execution can happen first.
+
+After the requested work is completed, the AI performs a completeness and requirement check.
+
+For example, suppose the user explicitly asks the AI to implement a login system but does not include password hashing.
+
+The AI should not silently add hashing simply because it believes hashing is necessary.
+
+It should first execute the authorized instructions.
+
+Afterward, during the completeness check, it can identify the issue:
+
+“The requested login implementation does not currently specify a password-hashing mechanism. A technical decision is required before this can be considered complete.”
+
+At that point, the AI moves into Chat/Learning Mode.
+
+It explains the missing concept, presents the relevant options, and allows the user to establish the technical decision.
+
+Only then does execution continue.
+
+This preserves the fundamental separation:
+
+**The AI can identify missing decisions. It cannot make those decisions without authorization.**
+
+## 4. Why Typewriter Coding Is Particularly Useful for Interns and Juniors
+
+Typewriter Coding can be particularly useful for interns and junior developers because it removes some of the low-level burdens that traditionally have to be learned before someone can effectively express a programming idea.
+
+The first benefit is that the user does not need to memorize the syntax of every programming language they work with.
+
+For example, the user may know exactly what they want:
+
+“Create a for loop that iterates through this array and performs this operation.”
+
+The user does not necessarily need to remember the exact syntax of that language. The AI can translate the user's instruction into the appropriate code.
+
+The second benefit is reducing simple syntax-related logical mistakes that come from differences between programming languages, libraries, or APIs.
+
+For example, different languages, libraries, or APIs may use different conventions for indexing, iteration, or other basic operations. An array may be zero-indexed, or a particular API may expose a different iteration convention. As a result, the exact boundaries of a loop may differ.
+
+In Typewriter Mode, the user can express the intended behavior:
+
+“Loop through all elements of the array and perform this operation.”
+
+The AI handles the language-specific syntax and mechanical details required to express that behavior.
+
+The same principle applies to simple mathematical or computational operations. A user may understand the higher-level operation they want without remembering the exact programming expression required to implement it.
+
+For example:
+
+“Create a loop that performs this calculation for every element.”
+
+The AI can translate that instruction into appropriate code.
+
+More importantly, Typewriter Mode can reduce the amount of programming-specific knowledge required to express an idea while still allowing the user to control intended behavior.
+
+This becomes even more significant when required logic depends on knowledge outside programming itself: physics, mathematics, statistics, finance, scientific formulas, engineering equations, and other domains.
+
+The user may understand the desired operation or possess the relevant domain knowledge without being an expert programmer. They can describe what the program should calculate, and the AI translates the description into code.
+
+Therefore:
+
+**The user provides the intention and desired behavior; the AI provides the programming-language expression.**
+
+This does not mean programming logic becomes completely unnecessary.
+
+The user still needs to understand what the program should do. For complex systems, the user also needs sufficient technical and domain knowledge to make appropriate decisions.
+
+Rather, Typewriter Mode removes much of the mechanical burden of expressing those decisions in programming syntax.
+
+```
+Traditional
+Idea → Programmer must know the language → Programmer translates the idea into syntax → Code
+
+Typewriter
+Idea → Human expresses intended behavior → AI translates it into syntax → Code
+```
+
+This is one reason Typewriter Mode can be particularly useful for interns and junior developers.
+
+It allows them to spend more time learning:
+
+- How systems work
+- How to reason about requirements
+- How to break problems down
+- How to understand existing code
+- How to make technical decisions
+- How different components interact
+- How to reason about the behavior of a system
+
+Instead of spending a disproportionate amount of time memorizing syntax or dealing with small language-specific implementation details.
+
+## 5. Mode 2 — Architecture & Code Delegation Mode
+
+The second execution mode is Architecture & Code Delegation Mode.
+
+Here, the human delegates more authority to the AI, but not unlimited authority.
+
+The human controls:
+
+- Scope
+- Functionality
+- Technical decisions
+
+The AI controls:
+
+- Architecture
+- Internal code structure
+- Plain implementation
+
+This means the user can say, for example:
+
+“Build the login functionality using this authentication mechanism and this hashing function.”
+
+The user has established the important technical decisions.
+
+The AI can then decide:
+
+- How many functions are needed
+- How those functions interact
+- How the code should be organized
+- Which internal helper functions are useful
+- How the authorized functionality should be structured
+
+For example, the AI might create:
+
+```
+login()
+ ↓
+findUser()
+ ↓
+verifyPassword()
+```
+
+The AI is free to choose this architecture because architecture has been delegated.
+
+However, it cannot change the technical decision.
+
+If the user specifies a particular password-hashing mechanism, the AI cannot replace it with another mechanism simply because it considers the alternative better.
+
+The distinction is therefore:
+
+**The human chooses the technical mechanisms. The AI chooses how to organize and implement them.**
+
+## 6. Technical Decisions Are Not Delegated
+
+This distinction is critical.
+
+Suppose the user says:
+
+“Create a login system that verifies passwords.”
+
+The user has specified functionality, but they have not necessarily established every technical decision required to implement it.
+
+The AI should not simply decide:
+
+“I'll use bcrypt.”
+
+Or:
+
+“I'll use Argon2.”
+
+Or:
+
+“I'll use JWT.”
+
+Or:
+
+“I'll use sessions.”
+
+Those are technical decisions.
+
+If the decision is necessary and has not been established, the AI enters Chat/Learning Mode.
+
+It can explain:
+
+- What the available approaches are
+- How they differ
+- Their advantages and disadvantages
+- Relevant security considerations
+- Which option it recommends
+
+But:
+
+**Recommendation is not authorization.**
+
+The user must establish or approve the decision.
+
+Only then can execution continue.
+
+This creates the workflow:
+
+```
+Missing knowledge or decision → Education → User establishes decision → Execution
+```
+
+## 7. Chat/Learning Mode
+
+Chat/Learning Mode exists to prevent the AI from guessing when the human has not established an important decision.
+
+The AI can recognize:
+
+“A decision is required here.”
+
+It can then teach the user about that decision.
+
+For example:
+
+“You need to choose a password-hashing mechanism before I can implement this. Here are the relevant options and why they differ…”
+
+The user learns the concept and chooses the approach.
+
+Then the system returns to execution.
+
+This creates an important principle:
+
+```
+Lack of knowledge → Education → Informed decision → Execution
+```
+
+The AI therefore becomes both:
+
+- A coding system
+- A teaching system
+
+without becoming the final authority over technical decisions.
+
+## 8. Step-by-Step Workflow
+
+The overall workflow can therefore be represented as:
+
+## Step 1 — Define the scope
+
+The human tells the AI what they want to work on.
+
+## Step 2 — Define the functionality
+
+The human establishes what the system should do.
+
+## Step 3 — Establish technical decisions
+
+The human specifies the technical mechanisms that matter.
+
+If the user does not know the necessary decision, the AI enters Chat/Learning Mode.
+
+## Step 4 — Select the execution mode
+
+The user chooses the level of delegation.
+
+**Typewriter Mode**
+
+The human controls architecture and implementation.
+
+**Architecture & Code Delegation Mode**
+
+The AI controls architecture and implementation within the authorized scope.
+
+## Step 5 — Execute
+
+The AI performs only the authorized work.
+
+## Step 6 — Validate
+
+The system checks whether the implementation satisfies the requested functionality and whether anything required is missing.
+
+## Step 7 — Report
+
+If architectural freedom was delegated, the AI reports the architectural decisions it made.
+
+For example:
+
+“I implemented the login functionality using login(), findUser(), and verifyPassword(). login() coordinates the operation, findUser() retrieves the user, and verifyPassword() performs password verification using the hashing mechanism you specified.”
+
+This gives the engineer a clear understanding of the resulting structure.
+
+## 9. Separation of Authority
+
+The entire system can be summarized with the following table:
+
+| Responsibility | Typewriter Mode | Architecture & Code Delegation |
+|---|---|---|
+| Scope | User | User |
+| Functionality | User | User |
+| Technical decisions | User | User |
+| Architecture | User | AI |
+| Plain code / implementation | User | AI |
+| Unrelated functionality | Not allowed | Not allowed |
+| Unspecified technical decisions | AI cannot invent them | AI cannot invent them |
+| Missing requirements | Checked after execution | Detected before/during execution |
+| Architectural recommendations | After execution | AI may determine architecture |
+| Architecture reporting | Yes | Required |
+
+The fundamental separation is:
+
+**The human controls the scope and the technical decisions. The AI may control the architecture and implementation only when the user explicitly delegates that authority.**
+
+And the most important principle is:
+
+**AI intelligence does not equal AI authority.**
+
+## 10. Preventing Technically Correct but Unauthorized Software
+
+One of the biggest problems with current coding agents is that an AI can produce technically good software that is nevertheless not the software the user authorized.
+
+For example, imagine the user asks:
+
+“Implement login.”
+
+The AI decides that a complete authentication system should include:
+
+- Login
+- Registration
+- Logout
+- Password reset
+- Email verification
+- User profiles
+- Session management
+- Additional middleware
+- Additional database tables
+
+From the AI's perspective, this might be a reasonable engineering interpretation.
+
+But from the user's perspective, the AI has exceeded its authority.
+
+The software may be technically correct while still being wrong.
+
+Therefore:
+
+**Correctness is not sufficient. The implementation must also be authorized.**
+
+The system must evaluate both:
+
+1. Does this work technically?
+2. Was this work authorized?
+
+Only when both conditions are satisfied should the change be accepted.
+
+## 11. Dedicated Agent vs Guidance/Control Layer
+
+There are two major ways to build this system.
+
+## Option 1 — Build a Dedicated Coding Agent
+
+The entire coding agent could be built from scratch.
+
+It would have complete control over:
+
+- Conversation flow
+- Scope management
+- Authorization
+- Technical-decision ownership
+- Execution modes
+- Chat/Learning Mode
+- Code generation
+- File modification
+- Command execution
+- Testing
+- Stopping execution
+- Validation
+- Reporting
+- Change auditing
+
+This provides maximum control.
+
+However, it also requires building a very large amount of infrastructure.
+
+## Option 2 — Build a Guidance/Control Layer on Top of Existing Agents
+
+The alternative is to reuse an existing coding agent as the coding engine.
+
+Conceptually:
+
+```
+Human → Guidance/Control Layer → Existing Coding Agent → Codebase
+```
+
+Existing coding agents may already provide powerful capabilities such as:
+
+- Understanding repositories
+- Navigating files
+- Editing code
+- Running commands
+- Running tests
+- Using development tools
+- Reasoning about existing code
+
+The proposed system does not necessarily need to recreate those capabilities.
+
+Instead, it can provide the missing authority and control layer.
+
+The control layer would manage:
+
+- Authorization
+- Scope
+- Technical-decision ownership
+- Execution mode
+- Chat/Learning transitions
+- Requirement validation
+- Architectural reporting
+- Change auditing
+- Execution permissions
+
+The existing coding agent remains the coding engine.
+
+The new system becomes the control system.
+
+## 12. Advisory Instructions vs Enforcement
+
+There is an important distinction between telling an AI what it should do and actually preventing it from doing something else.
+
+For example, a Skill might tell an agent:
+
+“Only modify the login functionality.”
+
+But that instruction is potentially only advisory.
+
+The stronger system is one where the control layer can actually prevent unauthorized actions.
+
+For example:
+
+```
+Authorized scope:
+ login()
+
+Allowed:
+ login()
+ helpers required by login
+
+Not allowed:
+ logout()
+ registration()
+ passwordReset()
+ unrelated refactoring
+```
+
+If the coding agent attempts to modify an unauthorized component, the control layer should ideally be able to intercept the action and reject it.
+
+This is the difference between:
+
+**Instruction**
+
+and:
+
+**Enforcement**
+
+## 13. Skills, Hooks, Plugins, APIs, Permissions and Middleware
+
+The implementation could potentially use mechanisms such as:
+
+- Skills
+- Hooks
+- Plugins
+- APIs
+- Middleware
+- Tool permissions
+- Lifecycle interception
+- MCP integrations
+- Custom wrappers
+- Sandboxing
+- Filesystem permissions
+- Command restrictions
+
+But the important question is not whether an extension mechanism exists.
+
+The important question is:
+
+**Can the mechanism actually enforce the authorization model?**
+
+For example, if a hook can intercept a file modification, determine whether the modification falls within the authorized scope, and block it when it does not, then the existing coding agent may be sufficient.
+
+If the mechanism can only tell the agent:
+
+“Please don't modify anything outside login,”
+
+then it may not provide strong enough guarantees.
+
+Therefore, the architecture should be evaluated based on enforcement capability, not merely instruction capability.
+
+## 14. Why Reuse an Existing Coding Agent If Possible?
+
+If an existing coding agent already has strong capabilities for understanding and modifying repositories, rebuilding those capabilities from scratch may be unnecessary.
+
+The proposed system can instead focus on the problem that existing coding agents may not solve sufficiently:
+
+**Who has authority to decide what the AI is allowed to do?**
+
+The existing agent provides:
+
+**Coding intelligence**
+
+The guidance/control layer provides:
+
+**Authority and boundaries**
+
+This creates a separation between:
+
+**Engine**
+
+and
+
+**Control system.**
+
+The coding agent can remain highly capable while the control layer determines what that capability is allowed to accomplish.
+
+## 15. The Three Types of Coding Agent Coding / Vibe Coding
+
+At this point, we can distinguish three different types of Coding Agent Coding / Vibe Coding.
+
+## Type 1 — Typewriter Coding
+
+The human tells the AI exactly what to write.
+
+The AI behaves like a highly capable typewriter.
+
+The human controls:
+
+- Functionality
+- Technical decisions
+- Architecture
+- Implementation
+
+The AI translates the human's instructions into programming syntax and executes them.
+
+This is particularly useful for interns and junior developers because it reduces the mechanical burden of programming syntax while preserving human control over the actual logic and decisions.
+
+## Type 2 — Architecture & Code Delegation
+
+The human provides the fundamental technical components and decisions.
+
+The AI decides:
+
+- Internal architecture
+- Function decomposition
+- Code structure
+- Plain implementation
+
+For example, the human can specify:
+
+“The login system must use this authentication mechanism, this database, and this hashing function.”
+
+The AI can then determine how to structure the code around those decisions.
+
+The separation is:
+
+```
+Human: technical decisions.
+AI: architecture + implementation.
+```
+
+## Type 3 — Vibe Coding
+
+This is the model that largely exists today.
+
+The human gives the AI a high-level objective, and the AI may determine much of what happens afterward:
+
+- Functionality
+- Technologies
+- Libraries
+- Architecture
+- Technical decisions
+- Implementation
+- Interactions between components
+
+The AI effectively becomes responsible for a large portion of the engineering process.
+
+The major problem is not necessarily that the generated code is bad.
+
+The deeper problem is control and maintainability.
+
+If the AI cannot fully understand the entire codebase and all of its accumulated assumptions within its effective context, maintaining the system can become extremely difficult.
+
+The AI may generate code based on only the portion of the system it currently understands.
+
+As the project grows, the distance between:
+
+**What the system actually is**
+
+and
+
+**What the AI currently understands the system to be**
+
+can become increasingly dangerous.
+
+This makes large-scale maintenance difficult.
+
+The user's position is that this third model is not yet a reliable solution for everything. A system capable of continuously understanding, learning from, and retaining the complete history and architecture of a large software system would be much closer to what is required.
+
+Until then, more controlled approaches can provide a stronger engineering model.
+
+## 16. My View on When Each Coding Mode Should Be Used
+
+In my view, Type 3 — Vibe Coding — is not realistically suitable as a primary development method today unless the AI actually reaches AGI-level capabilities, particularly the ability to continuously understand, learn, and maintain a large codebase over time rather than simply operate within a limited context window.
+
+I believe Type 1 — Typewriter Coding — is the appropriate method for interns and junior developers, and potentially for developers until they reach the mid-level stage.
+
+The purpose is not merely to produce code, but to force the developer to understand what is actually happening: the architecture, the implementation, the technical decisions, and the consequences of those decisions.
+
+The developer should be able to write and understand the code rather than simply direct an AI to produce it.
+
+Type 2 — Architecture & Code Delegation — becomes more appropriate as the developer becomes more experienced, particularly at the mid-level stage.
+
+At this point, the developer can make the important technical decisions and define the fundamental components while delegating the lower-level implementation and architectural organization to the AI.
+
+Eventually, Type 3 — Vibe Coding — may become appropriate for senior engineers, but only when they have developed the ability to maintain and understand code that they did not personally write.
+
+This is an important distinction.
+
+A senior engineer should not merely be someone who can write complex code. A senior engineer should also be capable of entering an unfamiliar codebase, understanding it, identifying problems, changing it safely, and maintaining it over time.
+
+Therefore, if an engineer reaches the point where they can reliably maintain a codebase that they did not write themselves, they can potentially use Type 3 more safely.
+
+The current limitation of AI is that it generally cannot reliably maintain an entire large codebase when the whole system cannot fit within its effective context and the necessary historical knowledge is not continuously available to it.
+
+Therefore, Type 3 creates a fundamental dependency:
+
+**If you cannot personally maintain the codebase that the AI is generating, you should not delegate the entire codebase to the AI.**
+
+The developer must first possess the ability to understand and maintain the system independently of the AI.
+
+My current view is therefore roughly:
+
+```
+Intern / Junior → Type 1: Typewriter Coding
+Mid-Level → Type 2: Architecture & Code Delegation
+Senior → Potentially Type 3: Vibe Coding
+```
+
+The progression is not based simply on job title or years of experience.
+
+It is based on the developer's actual ability to understand and maintain the resulting software.
+
+The key threshold for Type 3 is:
+
+**Can you maintain the code even when you are not the person who wrote it?**
+
+If the answer is no, then delegating the entire coding process to an AI is dangerous.
+
+If the answer is yes, then Type 3 becomes much more viable, because the human can act as the ultimate maintainer and reviewer of the system even when the AI produced most of the code.
+
+## 17. Final Principle
+
+The purpose of this architecture is not to make AI less capable.
+
+It is to make AI capability controllable.
+
+A highly intelligent AI can still be dangerous to a software project if it has authority over decisions that belong to the human.
+
+The ideal relationship is therefore not:
+
+**Human tells AI what they vaguely want, and AI decides everything else.**
+
+Instead:
+
+**Human defines the authority boundary. AI operates within that boundary.**
+
+The human decides what is being built and which technical decisions are allowed.
+
+The AI can be given permission to decide how the authorized functionality is structured and implemented.
+
+And whenever a necessary decision has not been established, the AI should not guess.
+
+It should teach.
+
+Then the human decides.
+
+Then execution continues.
+
+The final principle is therefore:
+
+**AI should not be restricted because it is intelligent. It should be controlled because intelligence does not grant authority.**
+
+And the fundamental architecture becomes:
+
+```
+Human Authority → AI Guidance/Control Layer → Coding Agent → Codebase
+```
+
+with the control layer enforcing the boundary between:
+
+**What the AI knows how to do**
+
+and
+
+**What the AI is actually authorized to do.**
+
+
