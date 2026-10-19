@@ -1833,9 +1833,9 @@ That is the weirdest part.
 
 ## How can we use the llms inside our company and still make sure our employees gain experience ?
 
-## AI Guidance and Control Layer for Coding Agents
+## 22. AI Guidance and Control Layer for Coding Agents
 
-## 1. Scope and Authority
+## 22.1. Scope and Authority
 
 The fundamental rule of this system is:
 
@@ -1886,7 +1886,7 @@ The central idea is:
 
 **The AI may be capable of doing more than the user asked for. That does not mean it is authorized to do more.**
 
-## 2. Mode 1 — Typewriter Mode
+## 22.2. Mode 1 — Typewriter Mode
 
 In Typewriter Mode, the AI behaves essentially like a highly capable programming typewriter.
 
@@ -1926,7 +1926,7 @@ The purpose is not to make the AI less intelligent.
 
 The purpose is to restrict its authority.
 
-## 3. Typewriter Mode and Completeness Checking
+## 22.3. Typewriter Mode and Completeness Checking
 
 Typewriter Mode does not necessarily mean that the AI should interrupt the user whenever it notices something that could be improved.
 
@@ -1954,7 +1954,7 @@ This preserves the fundamental separation:
 
 **The AI can identify missing decisions. It cannot make those decisions without authorization.**
 
-## 4. Why Typewriter Coding Is Particularly Useful for Interns and Juniors
+## 22.4. Why Typewriter Coding Is Particularly Useful for Interns and Juniors
 
 Typewriter Coding can be particularly useful for interns and junior developers because it removes some of the low-level burdens that traditionally have to be learned before someone can effectively express a programming idea.
 
@@ -2022,7 +2022,7 @@ It allows them to spend more time learning:
 
 Instead of spending a disproportionate amount of time memorizing syntax or dealing with small language-specific implementation details.
 
-## 5. Mode 2 — Architecture & Code Delegation Mode
+## 22.5. Mode 2 — Architecture & Code Delegation Mode
 
 The second execution mode is Architecture & Code Delegation Mode.
 
@@ -2074,7 +2074,7 @@ The distinction is therefore:
 
 **The human chooses the technical mechanisms. The AI chooses how to organize and implement them.**
 
-## 6. Technical Decisions Are Not Delegated
+## 22.6. Technical Decisions Are Not Delegated
 
 This distinction is critical.
 
@@ -2126,7 +2126,7 @@ This creates the workflow:
 Missing knowledge or decision → Education → User establishes decision → Execution
 ```
 
-## 7. Chat/Learning Mode
+## 22.7. Chat/Learning Mode
 
 Chat/Learning Mode exists to prevent the AI from guessing when the human has not established an important decision.
 
@@ -2157,7 +2157,7 @@ The AI therefore becomes both:
 
 without becoming the final authority over technical decisions.
 
-## 8. Step-by-Step Workflow
+## 22.8. Step-by-Step Workflow
 
 The overall workflow can therefore be represented as:
 
@@ -2205,7 +2205,7 @@ For example:
 
 This gives the engineer a clear understanding of the resulting structure.
 
-## 9. Separation of Authority
+## 22.9. Separation of Authority
 
 The entire system can be summarized with the following table:
 
@@ -2230,7 +2230,7 @@ And the most important principle is:
 
 **AI intelligence does not equal AI authority.**
 
-## 10. Preventing Technically Correct but Unauthorized Software
+## 22.10. Preventing Technically Correct but Unauthorized Software
 
 One of the biggest problems with current coding agents is that an AI can produce technically good software that is nevertheless not the software the user authorized.
 
@@ -2267,7 +2267,7 @@ The system must evaluate both:
 
 Only when both conditions are satisfied should the change be accepted.
 
-## 11. Dedicated Agent vs Guidance/Control Layer
+## 22.11. Dedicated Agent vs Guidance/Control Layer
 
 There are two major ways to build this system.
 
@@ -2336,7 +2336,7 @@ The existing coding agent remains the coding engine.
 
 The new system becomes the control system.
 
-## 12. Advisory Instructions vs Enforcement
+## 22.12. Advisory Instructions vs Enforcement
 
 There is an important distinction between telling an AI what it should do and actually preventing it from doing something else.
 
@@ -2375,7 +2375,7 @@ and:
 
 **Enforcement**
 
-## 13. Skills, Hooks, Plugins, APIs, Permissions and Middleware
+## 22.13. Skills, Hooks, Plugins, APIs, Permissions and Middleware
 
 The implementation could potentially use mechanisms such as:
 
@@ -2408,7 +2408,7 @@ then it may not provide strong enough guarantees.
 
 Therefore, the architecture should be evaluated based on enforcement capability, not merely instruction capability.
 
-## 14. Why Reuse an Existing Coding Agent If Possible?
+## 22.14. Why Reuse an Existing Coding Agent If Possible?
 
 If an existing coding agent already has strong capabilities for understanding and modifying repositories, rebuilding those capabilities from scratch may be unnecessary.
 
@@ -2434,7 +2434,7 @@ and
 
 The coding agent can remain highly capable while the control layer determines what that capability is allowed to accomplish.
 
-## 15. The Three Types of Coding Agent Coding / Vibe Coding
+## 22.15. The Three Types of Coding Agent Coding / Vibe Coding
 
 At this point, we can distinguish three different types of Coding Agent Coding / Vibe Coding.
 
@@ -2519,9 +2519,9 @@ The user's position is that this third model is not yet a reliable solution for 
 
 Until then, more controlled approaches can provide a stronger engineering model.
 
-## 16. My View on When Each Coding Mode Should Be Used
+## 22.16. My View on When Each Coding Mode Should Be Used
 
-In my view, Type 3 — Vibe Coding — is not realistically suitable as a primary development method today unless the AI actually reaches AGI-level capabilities, particularly the ability to continuously understand, learn, and maintain a large codebase over time rather than simply operate within a limited context window.
+In my view, Type 3 — Vibe Coding — is not realistically suitable as a primary development method today unless the AI actually reaches AGI that is mentioned in **point 18** particularly the ability to continuously understand, learn, and maintain a large codebase over time rather than simply operate within a limited context window.
 
 I believe Type 1 — Typewriter Coding — is the appropriate method for interns and junior developers, and potentially for developers until they reach the mid-level stage.
 
@@ -2535,13 +2535,13 @@ At this point, the developer can make the important technical decisions and defi
 
 Eventually, Type 3 — Vibe Coding — may become appropriate for senior engineers, but only when they have developed the ability to maintain and understand code that they did not personally write.
 
-This is an important distinction.
+## This is an important distinction.
 
 A senior engineer should not merely be someone who can write complex code. A senior engineer should also be capable of entering an unfamiliar codebase, understanding it, identifying problems, changing it safely, and maintaining it over time.
 
 Therefore, if an engineer reaches the point where they can reliably maintain a codebase that they did not write themselves, they can potentially use Type 3 more safely.
 
-The current limitation of AI is that it generally cannot reliably maintain an entire large codebase when the whole system cannot fit within its effective context and the necessary historical knowledge is not continuously available to it.
+The current limitation of AI is that it generally cannot reliably maintain an entire large codebase when the whole system cannot fit within its effective context and the necessary historical knowledge is not continuously available to it. till we reach the AGI that is mentioned in **point 18**
 
 Therefore, Type 3 creates a fundamental dependency:
 
@@ -2569,7 +2569,7 @@ If the answer is no, then delegating the entire coding process to an AI is dange
 
 If the answer is yes, then Type 3 becomes much more viable, because the human can act as the ultimate maintainer and reviewer of the system even when the AI produced most of the code.
 
-## 17. Final Principle
+## 22.17. Final Principle
 
 The purpose of this architecture is not to make AI less capable.
 
