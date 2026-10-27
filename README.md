@@ -1482,6 +1482,19 @@ Many software companies may be forced to become AI companies themselves.
 
 Not necessarily because they want to, but because if software generation becomes commoditized, simply selling software code may no longer be a sufficiently defensible business model.
 
+Someone told me that LLMs will not replace software engineers, and he gave this example: you can cook at home, because you have an oven, a fire, and ingredients, but you still pay for dishes made in a restaurant or delivered to your door. I understand his point, but I think the comparison doesn't hold.
+
+Cooking is a bad comparison, because cooking takes real effort, time, and skill, so people pay to avoid that effort. That's laziness, and it keeps restaurants in business. But if an LLM can take the effort away, so that you just describe what you want and the machine builds it, then there's very little left for a company to charge for. ( Up to now, though, LLMs can't fully take the effort away, because software engineering is not just about producing a product; there's much more to the software development life cycle.)
+
+Think about photography. Once, you needed a professional studio, expensive cameras, and a darkroom. Then everyone got a phone camera that takes great photos with one tap. Studios didn't completely vanish, but the whole portrait and photo-printing economy collapsed, because the effort people used to pay for was gone.
+
+Here's an even clearer case: the telephone switchboard operator. There was a time when every phone call had to be connected by a person sitting at a board, plugging in cables. It was a huge profession. Then automatic switching arrived, and now you just dial, and the connection happens with zero effort from you. Nobody pays for a connection anymore, and the profession no longer exists. It didn't survive as a luxury, because there was nothing left to pay for.
+
+Software will follow the same path. If making an app is as easy as asking for it, the business of selling software shrinks the same way.  **Because when something is effortless and cheaper, I will simply do it on my own.**
+
+But this won't happen soon, and there is one big reason. An LLM writes code piece by piece. It can't hold an entire codebase in its head, because it is limited by its context window, the amount of text it can focus on at once. So after the code is written, someone still has to debug it and make sure all the parts work together, since the model wrote each part separately and can't trace everything end to end.
+
+Someone also has to maintain it over time, and maintenance means you need to understand the code. If you didn't write it yourself and had an LLM write it for you, then you need the ability to understand code you didn't write. This already happens in many companies, where engineers deal with legacy code written years ago by other people. It's a huge skill, and it is not something beginners have. It belongs to late mid-level and senior engineers, and so on up the ladder of experience. So for now, using LLMs well in software engineering still demands a lot of skill and experience.
 
 ---
 
