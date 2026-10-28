@@ -1496,6 +1496,23 @@ But this won't happen soon, and there is one big reason. An LLM writes code piec
 
 Someone also has to maintain it over time, and maintenance means you need to understand the code. If you didn't write it yourself and had an LLM write it for you, then you need the ability to understand code you didn't write. This already happens in many companies, where engineers deal with legacy code written years ago by other people. It's a huge skill, and it is not something beginners have. It belongs to late mid-level and senior engineers, and so on up the ladder of experience. So for now, using LLMs well in software engineering still demands a lot of skill and experience.
 
+## Is it really all about just the learning the skill of doing something ?
+
+Even if you learned to cook , drive and the maintenance the code you didn't write doing it by yourself still costs time, and your day is limited: 24 hours at most, and far fewer once I remove sleep, food, and other basic needs. That is also why we still call an Uber, pay someone to wash our clothes, or order ready-made food. Lack of skill is a big part of it, but time is part of it too. Say an LLM builds 7 apps for me, and I'm an expert engineer who can maintain them myself. If each needs maintenance once a week, I'm maintaining at least one app every day, and that eats my time. An ordinary person uses far more than 7 apps, so creating a clone of each commercial app you use and maintaining your own version of each one could take more hours than the day has. That is why we prefer to delegate.
+So for me to build software myself instead of buying it, three things have to be true.
+
+## First : it has to be cheaper :
+
+The tokens needed to build my own antivirus have to cost less than the subscription, or I will obviously keep paying for the subscription.
+
+## Second: it has to take no effort from me in 100% of a job's tasks ( end to end ) :
+
+for example in software engineering, that means end to end: not one task of the job, but the whole software development life cycle, from creating the product to debugging to maintenance. It also means I need no special skill, such as knowing how to maintain code I didn't write. And it has to be reliable. In some fields even 99% is not enough: in software engineering, the missing 1% can be a security hole that lets someone hack your product, which makes it unfit for commercial use. But for software I build only for myself, 99% can be enough, since the risk falls on me.
+
+## Third : I need to save my time by delegate it to someone or a third part :
+
+That third part is what agents are for, and the concept already exists. An agent that handles tasks like maintaining your software, driving, or cooking solves the time problem, because you finally have someone to delegate to. If LLMs reach the point of doing 100% of a job's tasks, agents may need to scale up too, with better tools and stronger guardrails, but the idea of delegation is already here
+
 ---
 
 But this creates an even deeper problem
