@@ -1507,7 +1507,17 @@ The tokens needed to build my own antivirus have to cost less than the subscript
 
 ## Second: it has to take no effort from me in 100% of a job's tasks ( end to end ) :
 
-for example in software engineering, that means end to end: not one task of the job, but the whole software development life cycle, from creating the product to debugging to maintenance. It also means I need no special skill, such as knowing how to maintain code I didn't write. And it has to be reliable. In some fields even 99% is not enough: in software engineering, the missing 1% can be a security hole that lets someone hack your product, which makes it unfit for commercial use. But for software I build only for myself, 99% can be enough, since the risk falls on me.
+for example in software engineering, that means end to end: not one task of the job, but the whole software development life cycle, from creating the product to debugging to maintenance. It also means I need no special skill, such as knowing how to maintain code I didn't write. And it has to be reliable. In some fields even 99% is not enough: in software engineering, the missing 1% can be a security hole that lets someone hack your product, which makes it unfit for commercial use. But for software I build only for myself, 99% can be enough, since the risk falls on me. Even if AI reaches 100% technical capability, market trust will likely stop at 99%. In commercial software engineering, humans will still be required to cover that remaining 1% precisely because of accountability.
+
+Consider the evolution of elevators. When automated elevators became widespread, elevator operators gradually disappeared. Why? Because their role was strictly operational. They were never held responsible for the engineering, structural safety, or mechanical failures of the system. Once automation could safely handle the operation, the operator became obsolete.
+
+Now consider aviation. Modern autopilot systems can manage nearly every phase of flight, often requiring minimal human intervention. Yet, pilots remain essential—not because an aircraft cannot fly itself, but because ultimate responsibility for passenger safety, critical decision-making, and unexpected emergencies must rest with a human being.
+
+Software engineering will follow the path of aviation, not elevators.
+
+AI may eventually execute the entire software development lifecycle from design and coding to debugging and maintenance outperforming humans across all technical metrics. However, organizations will always require a human to own the risk, bear the consequences, and remain accountable for system integrity.
+
+AI may automate the act of software engineering, but it will never replace the responsibility of the software engineer. 
 
 ## Third : I need to save my time by delegate it to someone or a third part :
 
